@@ -17,10 +17,10 @@
 
  cacheSolve <- function(x, ...) {
 +        inversa <- x$getmatrix()
-+        if(!is.null(m))
++        if(!is.null(inversa))
 +        {
 +                message("getting cached data")
-+                return(m)
++                return(inversa)
 +        }
 +        matrix<-x$get()
 +        inversa <- solve(matrix, ...)
